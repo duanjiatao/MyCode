@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>index page</title>
+</head>
+
+<body>
+    <center>
+        <p><h1>Hello World!</h1><p>
+        <p><img src="./image/pic1.jpg" width="300px" height="200px"/></p>
+
+	  <p><form action="cgi_bin/math_cgi", method="POST">
+        <table>
+		<tr>
+		   <td>DATA1: </td> 
+		   <td><input type="text" name="data1"/></td>
+		   <td>DATA2: </td> 
+		   <td><input type="text" name="data2"/></td>
+		   <td><button type="submit"">   add   </button></td>
+		</tr>
+	    </table>
+        </form></p>
+
+        <p><form action="cgi_bin/my_insert_cgi", method="POST">
+        <table>
+		<tr>
+		   <td>NAME: </td> 
+		   <td><input type="text" name="NAME"/></td>
+		</tr>
+		<tr>
+		   <td>SEX: </td> 
+		   <td><input type="text" name="SEX"/></td>
+		</tr> 
+	    </table>
+	  
+        <button type="submit" style="padding-left:85px; padding-right:85px; padding-top:25px; padding-bottom:25px">Insert</button>
+        </form></p>
+
+	  <p><form action="cgi_bin/my_select_cgi", method="GET">
+	  <button type="submit" style="padding-left:85px; padding-right:85px; padding-top:25px; padding-bottom:25px">Select</button>
+        </form></p>
+
+    </center>
+</body>
+
+</html>
